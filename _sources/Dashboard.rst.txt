@@ -1,0 +1,28 @@
+=================================
+Dashboard
+=================================
+
+In Dashboard, you can check the results and progress of your instance.
+
+Basic
+=================================
+The following items are common in all versions.
+
+- Dashboard
+	- Response evolution (daily & cumulative)
+	- Results of multiple-choice questions
+	- Top 5 popular opinions for each free-format question
+
+- Details
+	- Recent 100 opinions posted
+
+
+Advanced
+========================================================
+The following items are available only in the STANDARD version or higher.
+
+- Analysis
+	You can check the results of analysis (classification of opinions and users) by Aska project team.
+
+- Nightly-build
+	This page becomes active only in the PRO version.

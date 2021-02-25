@@ -1,0 +1,47 @@
+=================================
+Instance modes
+=================================
+
+.. _signin_mode:
+
+Sign-in mode
+=================================
+	In this mode, users first access to the sign-in page before entering to the main page.
+
+	This will be the default mode whenever the instance has a password. 
+	Even when the instance doesn't have a password, using the sign-in mode, you can explicitly ask the users to input their user IDs or names before they participate.
+
+
+	.. note::
+		When the instance doesn't have a password, users are allowed to access to your Aska instance directly. 
+		You might wonder that some users might sneak in without going through the sign-in page. 
+		In fact, this is not a problem because these two are equivalent; to access directly, one would need to input a user ID or name in the URL anyway.
+
+
+
+Readonly mode
+=================================
+	As the name implies, users can only read (a part of) the posted opinions in readonly mode.
+
+	.. note::
+		In Aska Generator, you don't have an option for the readonly mode when the instance has a password.
+
+
+
+
+Hashtag mode
+=================================
+	This mode is a way to realize a question format right between free-format and multiple-choice questions.
+	If the hashtags are set, when users post their opinions, they are asked to choose the corresponding hashtag as well. 
+	When you have a strong prior knowledge and know how the opinion groups at least should be, you the names (codes) of the expected opinion groups as hashtags.
+
+	.. note::
+		The hashtags are prespecified by the host in Aska. (They are not like the ones in Twitter that users can set arbitrary tags.)
+
+	.. caution::
+		The hashtag mode is not available in the DEMO version.
+
+	.. tip::
+		Currently, the hashtags are set manually by Aska project team. 
+		If the plan of your instance is higher than the DEMO version, pleas ask us. 
+		We will set the hashtags for you.

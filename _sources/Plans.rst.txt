@@ -1,0 +1,46 @@
+=================================
+Plans
+=================================
+
+Currently, we have three versions as the plans: *DEMO*, *STANDARD*, and *PRO*.
+Please find the table at the bottom of this page to compare the plans.
+
+Versions
+======================
+
+- DEMO version
+	This version is for demo or internal uses. 
+	Although the functions are severely limited, you can quickly launch your own Aska instance for free. 
+
+- STANDARD version
+	This is a full version of Aska. 
+	Unless you wish to use Aska in extremely large scale or for an extremely long period of time, this version should be sufficient for your purpose. 
+
+	To use the STANDARD version, you must have an instance in DEMO version generated. 
+	Please ask us, and we will upgrade your instance manually.
+
+	.. tip::
+		**Full support:** 
+		A very important feature of Aska is that a large number of responses can be summarized.
+		If the number of responses is more than 100, we will classify the opinions and users into groups for you. 
+
+- PRO version
+	This is a nightly-build version of Aska. 
+	Please ask us for details if you are interested in using the PRO version.
+
+
+Plan comparison
+======================
+
+============== ================ ================ ================ 
+Plan           DEMO             STANDARD         Pro
+============== ================ ================ ================ 
+Price          Free             Ask us!          Ask us!
+**Support**    --               Fully supported  Fully supported
+Max. responses 20               10000            Unlimited
+Time expired   72 hours         Ask us!          Unlimited
+Question type  type A           type A / type B  type A / type B
+Max. questions 2                Ask us!          Unlimited
+Title image    --               Available        Available
+Hashtag mode   --               Available        Available
+============== ================ ================ ================ 

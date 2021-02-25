@@ -1,0 +1,75 @@
+====================
+Aska Generator
+====================
+
+This is a documentation for **Aska Generator**.
+
+
+What's Aska?
+------------
+*Aska* is an opinion-sharing platform that can be used for open-ended surveys, brainstorming, etc. 
+You, as a host, propose topics (questions) and ask users to post their responses.
+
+
+Basic usage
+-----------
+To use Aska, you build an **Aska instance** using **Aska generator**. 
+You can check the results and progress of your Aska instance at **Dashboard**.
+
+You can generate a demo instance for free. 
+To activate a full version of Aska, Aska project team will manually upgrade your demo instance.
+
+Composition
+-----------
+Aska is mainly composed of *Aska generator*, *Aska instance*, and *Dashboard*. 
+*Aska generator* and *Dashboard* should be accessible to hosts only.
+
+.. blockdiag::
+
+	blockdiag admin {
+		// Set node metrix
+		node_width = 120;
+		node_height = 60;
+
+		// orientation = portrait
+		default_fontsize = 16;
+		default_group_color = none;
+
+		Generator[label = "Aska\nGenerator", shape = roundedbox, color="#CDDCDE"];
+		Aska[label = "Aska\n instance", fontsize = 24, width = 140, height=80, shape = roundedbox];
+		Dashboard[label = "Dashboard", shape = roundedbox, color="#CDDCDE"];
+		hashtag[label = "Hashtag\n mode", fontsize = 12, width = 90, height=40];
+		signin[label = "Sign-in\n mode", fontsize = 12, width = 90, height=40];
+		readonly[label = "Readonly\n mode", fontsize = 12, width = 90, height=40];
+
+		group {
+		label = "type-A/type-B";
+		fontsize = 12;  // c2ange fontsize of group-label
+
+		Aska;
+		}
+
+		Generator -> Aska -- hashtag;
+		Generator -> Aska -- signin;
+		Generator -> Aska -- readonly;
+		Generator -> Dashboard;
+	}
+
+
+type-A and type-B Aska
+----------------------
+Aska has two basic modes called *type-A* and *type-B*. 
+These are more fundamental than other modes (e.g., the *hashtag*, *sign-in*, and *readonly* modes).
+If your instance version is higher than DEMO version, you can choose *type-A* or *type-B*, in addition to the choices of other modes.
+
+Please find :ref:`question_types` for details.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   /Quick_start
+   /Parameters
+   /Modes
+   /Dashboard
+   /Plans

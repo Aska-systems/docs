@@ -1,0 +1,713 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Input fields in Aska Generator &mdash; Aska  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Instance modes" href="Modes.html" />
+    <link rel="prev" title="Quick start: Launch a demo" href="Quick_start.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Aska
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Quick_start.html">Quick start: Launch a demo</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Input fields in Aska Generator</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#host-information">Host information</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#name"><code class="docutils literal notranslate"><span class="pre">Name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#e-mail"><code class="docutils literal notranslate"><span class="pre">E-mail</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#general-settings">General settings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#language"><code class="docutils literal notranslate"><span class="pre">Language</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#max-of-responses"><code class="docutils literal notranslate"><span class="pre">Max.</span> <span class="pre">#</span> <span class="pre">of</span> <span class="pre">responses</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#time-published"><code class="docutils literal notranslate"><span class="pre">Time</span> <span class="pre">published</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#time-expired"><code class="docutils literal notranslate"><span class="pre">Time</span> <span class="pre">expired</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#advanced-settings">Advanced settings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#anonymity"><code class="docutils literal notranslate"><span class="pre">Anonymity</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#password"><code class="docutils literal notranslate"><span class="pre">Password</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#terms-of-use"><code class="docutils literal notranslate"><span class="pre">Terms</span> <span class="pre">of</span> <span class="pre">Use</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#purpose-of-this-aska-instance"><code class="docutils literal notranslate"><span class="pre">Purpose</span> <span class="pre">of</span> <span class="pre">this</span> <span class="pre">Aska</span> <span class="pre">instance</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#acknowledgment"><code class="docutils literal notranslate"><span class="pre">Acknowledgment</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verification-code"><code class="docutils literal notranslate"><span class="pre">Verification</span> <span class="pre">code</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#title-settings">Title settings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#layout"><code class="docutils literal notranslate"><span class="pre">Layout</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#title"><code class="docutils literal notranslate"><span class="pre">Title</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#subtitle"><code class="docutils literal notranslate"><span class="pre">Subtitle</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#questions-fields">Questions fields</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#question-types"><code class="docutils literal notranslate"><span class="pre">Question</span> <span class="pre">types</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mandatory-not-mandatory"><code class="docutils literal notranslate"><span class="pre">Mandatory/Not</span> <span class="pre">mandatory</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#question-text"><code class="docutils literal notranslate"><span class="pre">Question</span> <span class="pre">text</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8"><code class="docutils literal notranslate"><span class="pre">Subtitle</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Modes.html">Instance modes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Dashboard.html">Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Plans.html">Plans</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Aska</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Input fields in Aska Generator</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/Parameters.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="input-fields-in-aska-generator">
+<h1>Input fields in Aska Generator<a class="headerlink" href="#input-fields-in-aska-generator" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="host-information">
+<span id="host-info"></span><h2>Host information<a class="headerlink" href="#host-information" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="name">
+<h3><code class="docutils literal notranslate"><span class="pre">Name</span></code><a class="headerlink" href="#name" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 65%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mandatory</p></td>
+<td><p>default: none</p></td>
+</tr>
+</tbody>
+</table>
+<p>The name of the host.
+This will be displayed in the Terms of Use so that users see who is organizing the instance.</p>
+</div></blockquote>
+</div>
+<div class="section" id="e-mail">
+<h3><code class="docutils literal notranslate"><span class="pre">E-mail</span></code><a class="headerlink" href="#e-mail" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 65%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mandatory</p></td>
+<td><p>default: none</p></td>
+</tr>
+</tbody>
+</table>
+<p>The E-mail address of the host.
+This will be displayed in the Terms of Use so that users can contact the host.
+Unless needed, Aska project team will not send any message to this E-mail address.</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="general-settings">
+<span id="id1"></span><h2>General settings<a class="headerlink" href="#general-settings" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="language">
+<h3><code class="docutils literal notranslate"><span class="pre">Language</span></code><a class="headerlink" href="#language" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 65%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mandatory</p></td>
+<td><p>default: Automatic</p></td>
+</tr>
+</tbody>
+</table>
+<p>Language setting of an Aska instance and Dashboard.</p>
+<ul class="simple">
+<li><p>Automatic: The default language of user’s setting will be automatically identified and used.</p></li>
+<li><p>Specific lang.: Specify the language that users will see.</p></li>
+</ul>
+<p>Note that the posted opinions will not be automatically translated based on this language choice.</p>
+</div></blockquote>
+</div>
+<div class="section" id="max-of-responses">
+<h3><code class="docutils literal notranslate"><span class="pre">Max.</span> <span class="pre">#</span> <span class="pre">of</span> <span class="pre">responses</span></code><a class="headerlink" href="#max-of-responses" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 41%" />
+<col style="width: 30%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mandatory</p></td>
+<td><p>default: <em>20</em></p></td>
+<td><p><em>Integer</em></p></td>
+</tr>
+</tbody>
+</table>
+<p>The upper limit of the number of responses.
+When this limit is exceeded, users can no longer access to the instance.
+Note that this is not the limit of the users; when each user are allowed to visit and respond multiple times, the upper limit of the number of users will be less than or equal to <code class="docutils literal notranslate"><span class="pre">Max.</span> <span class="pre">#</span> <span class="pre">of</span> <span class="pre">responses</span></code>.</p>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>This is fixed to 20 in the DEMO version.</p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="time-published">
+<h3><code class="docutils literal notranslate"><span class="pre">Time</span> <span class="pre">published</span></code><a class="headerlink" href="#time-published" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 52%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mandatory</p></td>
+<td><p>default: time launched</p></td>
+<td><p><em>Datetime</em></p></td>
+</tr>
+</tbody>
+</table>
+<p>An instance becomes accessible immediately after it is generated.
+However, when <code class="docutils literal notranslate"><span class="pre">Time</span> <span class="pre">published</span></code> is a future datetime, all the responses (opinions and assessments) that have been done before <code class="docutils literal notranslate"><span class="pre">Time</span> <span class="pre">published</span></code> will be deleted.</p>
+<p>The initial choices (opinions) generated via Aska Generator will remain even after <code class="docutils literal notranslate"><span class="pre">Time</span> <span class="pre">published</span></code>.</p>
+</div></blockquote>
+</div>
+<div class="section" id="time-expired">
+<h3><code class="docutils literal notranslate"><span class="pre">Time</span> <span class="pre">expired</span></code><a class="headerlink" href="#time-expired" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 57%" />
+<col style="width: 22%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mandatory</p></td>
+<td><p>default: 72 hours from launch</p></td>
+<td><p><em>Datetime</em></p></td>
+</tr>
+</tbody>
+</table>
+<p>Users can no longer access to the instance after <code class="docutils literal notranslate"><span class="pre">Time</span> <span class="pre">expired</span></code>.
+Note that the host can still access to Aska Generator and Dashboard for a while.</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="advanced-settings">
+<h2>Advanced settings<a class="headerlink" href="#advanced-settings" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="anonymity">
+<h3><code class="docutils literal notranslate"><span class="pre">Anonymity</span></code><a class="headerlink" href="#anonymity" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 65%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mandatory</p></td>
+<td><p>default: <em>checked</em></p></td>
+</tr>
+</tbody>
+</table>
+<p>If unchecked, users will be asked to input their user IDs or names when they sign-in.</p>
+<ul class="simple">
+<li><p>checked: Aska does not collect user IDs and names.</p></li>
+<li><dl class="simple">
+<dt>unchecked:</dt><dd><ul>
+<li><p>with <a class="reference internal" href="#password"><span class="std std-ref">Password</span></a>: Aska collects user IDs and names. (Aska will launch with the sign-in mode)</p></li>
+<li><dl class="simple">
+<dt>no <a class="reference internal" href="#password"><span class="std std-ref">Password</span></a>:</dt><dd><ul>
+<li><p>sign-in mode: Aska collects user IDs and names.</p></li>
+<li><p>normal mode: Aska does not collect user IDs and names by default.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="password">
+<span id="id2"></span><h3><code class="docutils literal notranslate"><span class="pre">Password</span></code><a class="headerlink" href="#password" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 67%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mandatory</p></td>
+<td><p>default: <em>unchecked</em></p></td>
+</tr>
+</tbody>
+</table>
+<p>Password for an Aska instance. This is an instance-specific password and is common for all users.
+If checked and the <em>password</em> field is not empty, Aska will be launched with the sign-in mode.
+Users will be asked to input the password the you set to access to your Aska instance.</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>checked:</dt><dd><ul>
+<li><p>none empty password: The password will be required to access an Aska instance.</p></li>
+<li><p>empty password: This field will be unchecked automatically.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>unchecked:</dt><dd><ul>
+<li><p>No password will be required to access an Aska instance.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>This is NOT a secure restriction at all. Please do not set a password which should really be kept in secret.
+The password text will not be anonymized within Aska Generator. Moreover, the password input by a users will show up in the URL when they sign-in.</p>
+<p>Because this is a common password for all users, in principle, we can never make accesses completely strict.</p>
+<p>If you need a serious access restriction, please restrict the access to the instance URL itself by an alternative way.</p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="terms-of-use">
+<span id="id3"></span><h3><code class="docutils literal notranslate"><span class="pre">Terms</span> <span class="pre">of</span> <span class="pre">Use</span></code><a class="headerlink" href="#terms-of-use" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 82%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mandatory</p></td>
+<td><p>default: “Confirm the Terms of Use <em>implicitly</em>”</p></td>
+</tr>
+</tbody>
+</table>
+<p>Agreement format of the Terms of Use.</p>
+<ul class="simple">
+<li><p>“Confirm the Terms of Use <em>implicitly</em>”: No explicit check will be required to confirm the agreement.</p></li>
+<li><p>“Confirm the Terms of Use <em>explicitly</em>”: Explicit check will be required to confirm the agreement.</p></li>
+<li><p>“Omit terms”: Aska does not ask for agreement to the Terms of Use.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>By default, the base Terms of Use of Aska will be displayed.
+If you have terms to be added, please write them down in <a class="reference internal" href="#purpose-of-terms"><span class="std std-ref">Purpose of this Aska instance</span></a>.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>“Omit terms” option is available only in the <strong>PRO</strong> version.</p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="purpose-of-this-aska-instance">
+<span id="purpose-of-terms"></span><h3><code class="docutils literal notranslate"><span class="pre">Purpose</span> <span class="pre">of</span> <span class="pre">this</span> <span class="pre">Aska</span> <span class="pre">instance</span></code><a class="headerlink" href="#purpose-of-this-aska-instance" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 57%" />
+<col style="width: 21%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>optional</p></td>
+<td><p>default: default sentence</p></td>
+<td><p><em>text</em></p></td>
+</tr>
+</tbody>
+</table>
+<p>Purpose of an Aska instance, which will be displayed in the Terms of Use.
+Although this field is optional, we strongly recommend to fill in the purpose.
+If this field is empty, the instance will be assumed as a demo instance and the following sentences will be displayed by default.
+If this field is not empty, the default sentence will be replaced with the input sentences.</p>
+<p>Default sentences:</p>
+<blockquote>
+<div><p>“<em>The purpose of this instance is unknown, although it is supposed be provided by the host of this instance. We presume that this is for a demo purpose.</em>”</p>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="acknowledgment">
+<h3><code class="docutils literal notranslate"><span class="pre">Acknowledgment</span></code><a class="headerlink" href="#acknowledgment" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 43%" />
+<col style="width: 29%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>optional</p></td>
+<td><p>default: none</p></td>
+<td><p><em>text</em></p></td>
+</tr>
+</tbody>
+</table>
+<p>Additional comments and instructions to users after the submission is completed.</p>
+</div></blockquote>
+</div>
+<div class="section" id="verification-code">
+<h3><code class="docutils literal notranslate"><span class="pre">Verification</span> <span class="pre">code</span></code><a class="headerlink" href="#verification-code" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 58%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mandatory</p></td>
+<td><p>default: <em>No</em></p></td>
+</tr>
+</tbody>
+</table>
+<p>A random code will show up after the submission is completed.
+This is mainly for the use in Amazon Mechanical Turk.</p>
+<ul class="simple">
+<li><p><em>Yes</em>: The code will be displayed.</p></li>
+<li><p><em>No</em>: No code will be displayed.</p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="title-settings">
+<h2>Title settings<a class="headerlink" href="#title-settings" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="layout">
+<span id="id4"></span><h3><code class="docutils literal notranslate"><span class="pre">Layout</span></code><a class="headerlink" href="#layout" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 77%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mandatory</p></td>
+<td><p>default: “<em>Layout without a title</em>”</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>“<em>Layout without a title</em>”: In this version, the header part of the instance is omitted.</p></li>
+<li><p>“<em>Layout with a title</em>”: In this version, the title and subtitle of the instance are displayed.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="title">
+<span id="id5"></span><h3><code class="docutils literal notranslate"><span class="pre">Title</span></code><a class="headerlink" href="#title" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 60%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>optional</p></td>
+<td><p>default: none</p></td>
+</tr>
+</tbody>
+</table>
+<p>The title of the instance.
+If you have selected <em>Layout with a title</em> and left this field blanck, <a class="reference internal" href="#layout"><span class="std std-ref">Layout</span></a> will be turned to “<em>Layout without a title</em>” automatically.</p>
+</div></blockquote>
+</div>
+<div class="section" id="subtitle">
+<h3><code class="docutils literal notranslate"><span class="pre">Subtitle</span></code><a class="headerlink" href="#subtitle" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 60%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>optional</p></td>
+<td><p>default: none</p></td>
+</tr>
+</tbody>
+</table>
+<p>Additional comment below <a class="reference internal" href="#title"><span class="std std-ref">Title</span></a>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If your plan is higher than the <strong>DEMO</strong> version and <cite>Layout with a title</cite> is selected, then you can also add a background image in the header.
+Please ask us, as this will be done manually.</p>
+</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="questions-fields">
+<span id="question-fields"></span><h2>Questions fields<a class="headerlink" href="#questions-fields" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="question-types">
+<span id="id6"></span><h3><code class="docutils literal notranslate"><span class="pre">Question</span> <span class="pre">types</span></code><a class="headerlink" href="#question-types" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 67%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mandatory</p></td>
+<td><p>default: Free-format</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Free-format (for open-ended questions):</dt><dd><ul>
+<li><p>type-A [default]: Users first refer to opinions of others. Then, they select the opinions that they support and post their own opinions if they have any.</p></li>
+<li><p>type-B: Users post their own opinion before referring to the opinions of others. Then, they select the opinions that have the same meaning as the one just posted.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Multiple-choice:</dt><dd><ul>
+<li><p>Single-select: Each user can select one choice from an initially prepared set of choices.</p></li>
+<li><p>Multi-select: Each user can select arbitrary number of choices from an initially prepared set of choices.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="mandatory-not-mandatory">
+<h3><code class="docutils literal notranslate"><span class="pre">Mandatory/Not</span> <span class="pre">mandatory</span></code><a class="headerlink" href="#mandatory-not-mandatory" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 65%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mandatory</p></td>
+<td><p>default: mandatory</p></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>mandatory tag</em> will appear if the question is mandatory.
+The <em>mandatory tag</em> will not appear if all questions are mandatory.</p>
+</div></blockquote>
+</div>
+<div class="section" id="question-text">
+<span id="id7"></span><h3><code class="docutils literal notranslate"><span class="pre">Question</span> <span class="pre">text</span></code><a class="headerlink" href="#question-text" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 58%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mandatory</p></td>
+<td><p>default: none</p></td>
+</tr>
+</tbody>
+</table>
+<p>A specific topic or question that you want to ask to your users.</p>
+</div></blockquote>
+</div>
+<div class="section" id="id8">
+<h3><code class="docutils literal notranslate"><span class="pre">Subtitle</span></code><a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 60%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>optional</p></td>
+<td><p>default: none</p></td>
+</tr>
+</tbody>
+</table>
+<p>Additional comment below <a class="reference internal" href="#question-text"><span class="std std-ref">Question text</span></a>.</p>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="Modes.html" class="btn btn-neutral float-right" title="Instance modes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Quick_start.html" class="btn btn-neutral float-left" title="Quick start: Launch a demo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Aska project team.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,286 @@
+=================================
+Input fields in Aska Generator
+=================================
+
+
+.. _host_info:
+
+Host information
+=================================
+
+``Name``
+---------------------------------
+	+-----------+--------------------+
+	| mandatory | default: none      |
+	+-----------+--------------------+
+
+	The name of the host. 
+	This will be displayed in the Terms of Use so that users see who is organizing the instance.
+
+
+``E-mail``
+---------------------------------
+	+-----------+--------------------+
+	| mandatory | default: none      |
+	+-----------+--------------------+
+
+	The E-mail address of the host. 
+	This will be displayed in the Terms of Use so that users can contact the host. 
+	Unless needed, Aska project team will not send any message to this E-mail address.
+
+
+.. _general_settings:
+
+General settings
+=================================
+
+``Language``
+---------------------------------
+	+-----------+--------------------+
+	| mandatory | default: Automatic |
+	+-----------+--------------------+
+
+	Language setting of an Aska instance and Dashboard.
+
+	- Automatic: The default language of user's setting will be automatically identified and used.
+	- Specific lang.: Specify the language that users will see.
+
+	Note that the posted opinions will not be automatically translated based on this language choice.
+
+``Max. # of responses``
+---------------------------------
+	+-----------+---------------+-----------+
+	| mandatory | default: *20* | *Integer* |
+	+-----------+---------------+-----------+
+
+	The upper limit of the number of responses. 
+	When this limit is exceeded, users can no longer access to the instance. 
+	Note that this is not the limit of the users; when each user are allowed to visit and respond multiple times, the upper limit of the number of users will be less than or equal to ``Max. # of responses``.
+
+	.. caution::
+		This is fixed to 20 in the DEMO version.
+
+
+``Time published``
+---------------------------------
+	+-----------+-------------------------+------------+
+	| mandatory |  default: time launched | *Datetime* |
+	+-----------+-------------------------+------------+
+
+	An instance becomes accessible immediately after it is generated. 
+	However, when ``Time published`` is a future datetime, all the responses (opinions and assessments) that have been done before ``Time published`` will be deleted. 
+
+	The initial choices (opinions) generated via Aska Generator will remain even after ``Time published``.
+
+
+``Time expired``
+---------------------------------
+	+-----------+-------------------------------+------------+
+	| mandatory | default: 72 hours from launch | *Datetime* |
+	+-----------+-------------------------------+------------+
+
+	Users can no longer access to the instance after ``Time expired``. 
+	Note that the host can still access to Aska Generator and Dashboard for a while.
+
+
+
+
+Advanced settings
+=================================
+
+``Anonymity``
+---------------------------------
+	+-----------+--------------------+
+	| mandatory | default: *checked* |
+	+-----------+--------------------+
+
+	If unchecked, users will be asked to input their user IDs or names when they sign-in.
+
+	- checked: Aska does not collect user IDs and names.
+	- unchecked: 
+		- with :ref:`password`: Aska collects user IDs and names. (Aska will launch with the sign-in mode)
+		- no :ref:`password`: 
+			- sign-in mode: Aska collects user IDs and names.
+			- normal mode: Aska does not collect user IDs and names by default.
+
+.. _password:
+
+``Password``
+---------------------------------
+	+-----------+----------------------+
+	| mandatory | default: *unchecked* |
+	+-----------+----------------------+
+
+	Password for an Aska instance. This is an instance-specific password and is common for all users. 
+	If checked and the *password* field is not empty, Aska will be launched with the sign-in mode. 
+	Users will be asked to input the password the you set to access to your Aska instance.
+
+	- checked: 
+		- none empty password: The password will be required to access an Aska instance.
+		- empty password: This field will be unchecked automatically.
+	- unchecked:
+		- No password will be required to access an Aska instance.
+
+	.. danger::
+		This is NOT a secure restriction at all. Please do not set a password which should really be kept in secret. 
+		The password text will not be anonymized within Aska Generator. Moreover, the password input by a users will show up in the URL when they sign-in. 
+
+		Because this is a common password for all users, in principle, we can never make accesses completely strict.
+
+		If you need a serious access restriction, please restrict the access to the instance URL itself by an alternative way.
+
+.. _terms_of_use:
+
+``Terms of Use``
+---------------------------------
+	+-----------+--------------------------------------------------+
+	| mandatory | default: "Confirm the Terms of Use *implicitly*" |
+	+-----------+--------------------------------------------------+
+
+	Agreement format of the Terms of Use. 
+
+	- "Confirm the Terms of Use *implicitly*": No explicit check will be required to confirm the agreement.
+	- "Confirm the Terms of Use *explicitly*": Explicit check will be required to confirm the agreement.
+	- "Omit terms": Aska does not ask for agreement to the Terms of Use.
+
+	.. note::
+		By default, the base Terms of Use of Aska will be displayed. 
+		If you have terms to be added, please write them down in :ref:`purpose_of_terms`.
+
+	.. tip::
+		"Omit terms" option is available only in the **PRO** version. 
+
+
+.. _purpose_of_terms:
+
+``Purpose of this Aska instance``
+---------------------------------
+	+----------+---------------------------+----------+
+	| optional | default: default sentence | *text*   |
+	+----------+---------------------------+----------+
+
+	Purpose of an Aska instance, which will be displayed in the Terms of Use. 
+	Although this field is optional, we strongly recommend to fill in the purpose. 
+	If this field is empty, the instance will be assumed as a demo instance and the following sentences will be displayed by default. 
+	If this field is not empty, the default sentence will be replaced with the input sentences.
+
+	Default sentences:
+
+		"*The purpose of this instance is unknown, although it is supposed be provided by the host of this instance. We presume that this is for a demo purpose.*"
+
+
+``Acknowledgment``
+---------------------------------
+	+----------+---------------+----------+
+	| optional | default: none | *text*   |
+	+----------+---------------+----------+
+
+	Additional comments and instructions to users after the submission is completed.
+
+
+
+``Verification code``
+---------------------------------
+	+-----------+---------------+
+	| mandatory | default: *No* |
+	+-----------+---------------+
+
+	A random code will show up after the submission is completed. 
+	This is mainly for the use in Amazon Mechanical Turk.
+
+	- *Yes*: The code will be displayed.
+	- *No*: No code will be displayed.
+
+
+
+
+
+Title settings
+=================================
+
+.. _layout:
+
+``Layout``
+---------------------------------
+	+-----------+-------------------------------------+
+	| mandatory | default: "*Layout without a title*" |
+	+-----------+-------------------------------------+
+
+	- "*Layout without a title*": In this version, the header part of the instance is omitted.
+	- "*Layout with a title*": In this version, the title and subtitle of the instance are displayed.
+
+.. _title:
+
+``Title``
+---------------------------------
+	+----------+---------------+
+	| optional | default: none |
+	+----------+---------------+
+
+	The title of the instance. 
+	If you have selected *Layout with a title* and left this field blanck, :ref:`layout` will be turned to "*Layout without a title*" automatically.
+
+``Subtitle``
+---------------------------------
+	+----------+---------------+
+	| optional | default: none |
+	+----------+---------------+
+
+	Additional comment below :ref:`title`.
+
+	.. tip::
+		If your plan is higher than the **DEMO** version and `Layout with a title` is selected, then you can also add a background image in the header. 
+		Please ask us, as this will be done manually.
+
+
+
+
+.. _question_fields:
+
+Questions fields
+=================================
+
+.. _question_types:
+
+``Question types``
+---------------------------------
+	+-----------+----------------------+
+	| mandatory | default: Free-format |
+	+-----------+----------------------+
+
+	- Free-format (for open-ended questions): 
+		- type-A [default]: Users first refer to opinions of others. Then, they select the opinions that they support and post their own opinions if they have any.
+		- type-B: Users post their own opinion before referring to the opinions of others. Then, they select the opinions that have the same meaning as the one just posted. 
+	- Multiple-choice: 
+		- Single-select: Each user can select one choice from an initially prepared set of choices.
+		- Multi-select: Each user can select arbitrary number of choices from an initially prepared set of choices.
+
+``Mandatory/Not mandatory``
+---------------------------------
+	+-----------+--------------------+
+	| mandatory | default: mandatory |
+	+-----------+--------------------+
+
+	The *mandatory tag* will appear if the question is mandatory.
+	The *mandatory tag* will not appear if all questions are mandatory.
+
+.. _question_text:
+
+``Question text``
+---------------------------------
+	+-----------+---------------+
+	| mandatory | default: none |
+	+-----------+---------------+
+
+	A specific topic or question that you want to ask to your users. 	
+
+``Subtitle``
+---------------------------------
+	+----------+---------------+
+	| optional | default: none |
+	+----------+---------------+
+
+	Additional comment below :ref:`question_text`.
+
+
+
