@@ -11,15 +11,15 @@ permalink: /
 
 To use the apps below, please sign in via the following buttons:
 
-[Sign in](#signin){: .btn .btn-blue .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[Sign up][#signup]{: .btn .fs-5 .mb-4 .mb-md-0 }
+[Sign in][signin]{: .btn .btn-blue .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Sign up][signup]{: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
-## Apps
-
 Apps that support your activities
 {: .fs-6 .fw-300 }
+
+## Apps
 
 <dl>
 <dt>Aska (v1.9)</dt>
@@ -36,8 +36,8 @@ Apps that support your activities
 
 
 
-[Jekyll]: https://jekyllrb.com
-[Markdown]: https://daringfireball.net/projects/markdown/
+[Signin]: #
+[Signup]: #
 [Liquid]: https://github.com/Shopify/liquid/wiki
 [Front matter]: https://jekyllrb.com/docs/front-matter/
 [Jekyll configuration]: https://jekyllrb.com/docs/configuration/
