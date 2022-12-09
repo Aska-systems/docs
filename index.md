@@ -6,20 +6,20 @@ description: "App management system"
 permalink: /
 ---
 
-Apps that support your activities
-{: .fs-6 .fw-300 }
-
 # Sign in
 {: .fs-9 }
 
 To use the apps below, please sign in via the following buttons:
 
-[Sign in](#getting-started){: .btn .btn-blue .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[Sign up][Just the Docs repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
+[Sign in](#signin){: .btn .btn-blue .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Sign up][#signup]{: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
 ## Apps
+
+Apps that support your activities
+{: .fs-6 .fw-300 }
 
 <dl>
 <dt>Aska (v1.9)</dt>
