@@ -1,7 +1,8 @@
 ---
 layout: default
 title: PositiveReview
-nav_order: 4
+parent: Other apps
+nav_order: 2
 ---
 
 # PositiveReview
@@ -33,6 +34,7 @@ Beta version
 
 
 ## How it works?
+
 簡単にイラスト発注ができるサブスク型のアプリです。
 「こんなイラストがほしい」という説明を書いたり、Google検索で見つけた画像を提示したり、自身で描いた下書きを提示すると、イラスト作成の募集ができます。
 
@@ -43,6 +45,11 @@ Beta version
 そろそろ「◯らすとや」の素材から卒業しませんか？
 
 > ご要望があれば、英文校正などのサービスも追加していきます。フィードバックいただけると幸いです。
+
+
+## Usage
+
+
 
 
 <!-- ## Tutorial video -->

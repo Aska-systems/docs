@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Manuspection
-nav_order: 5
+parent: Other apps
+nav_order: 1
 ---
 
 # Manuspection
@@ -41,6 +42,9 @@ LaTeXで書かれた論文原稿が、論文誌のフォーマットに準拠し
 
 
 > 対応論文誌は、要望に応じて順次足していきます。
+
+
+## Usage
 
 
 <!-- ## Tutorial video -->

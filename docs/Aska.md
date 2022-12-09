@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Aska
-parent: Aska apps
 nav_order: 1
 ---
 
@@ -37,9 +36,18 @@ Opinion-sharing platform
 
 ## How it works?
 
+Aska apps are survey frameworks that are suitable for open-ended questions. 
+
+Users respond by posting their own opinions and selecting the opinions that they agree with (just like you often do in social network services). Machine-learning algorithms nicely categorize&align the collected opinions based on these user activities. 
+<!-- {: .fs-6 .fw-300 } -->
 
 
-## Tutorial video
+## Usage
+
+
+
+
+<!-- ## Tutorial video -->
 
 
 

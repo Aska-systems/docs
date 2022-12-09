@@ -1,6 +1,7 @@
 ---
 layout: default
 title: OMP
+parent: Other apps
 nav_order: 3
 ---
 
@@ -38,6 +39,8 @@ OMP is currently in preparation. Only limited users can access to the app.
 
 ## How it works?
 
+
+## Usage
 
 
 <!-- ## Tutorial video -->

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Aska lite
-parent: Aska apps
 nav_order: 2
 ---
 
@@ -54,7 +53,11 @@ Aska Lite is currently in preparation. Only limited users can access to the app.
 
 
 
-## Tutorial video
+## Usage
+
+
+
+<!-- ## Tutorial video -->
 
 
 

@@ -17,8 +17,8 @@ To use the apps below, please sign in via the following buttons:
 
 ---
 
-Apps that support your activities
-{: .fs-6 .fw-300 }
+<!-- Apps that support your activities
+{: .fs-6 .fw-300 } -->
 
 ## Apps
 
@@ -27,12 +27,12 @@ Apps that support your activities
 <dd>Opinion-sharing platform</dd>
 <dt>Aska lite</dt>
 <dd>Simpler version of Aska</dd>
-<dt>OMP</dt>
-<dd>Optimal visualization of matrix (table) data</dd>
-<dt>PositiveReview</dt>
-<dd>Crowd-sourcing app for slide figures</dd>
 <dt>Manuspection</dt>
 <dd>Format checker for your LaTeX research manuscript</dd>
+<dt>PositiveReview</dt>
+<dd>Crowd-sourcing app for slide figures</dd>
+<dt>OMP</dt>
+<dd>Optimal visualization of matrix (table) data</dd>
 </dl>
 
 
