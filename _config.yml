@@ -16,6 +16,7 @@
 title: Docs
 description: Docs for Aska systems
 baseurl: "" # the subpath of your site, e.g. /blog
+theme: just-the-docs
 url: "https://Aska-systems.github.io/docs" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
