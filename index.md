@@ -12,6 +12,7 @@ permalink: /
 To use the apps below, please sign in via the following buttons:
 
 [Sign in][signin]{: .btn .btn-blue .fs-5 .mb-4 .mb-md-0 .mr-2 }
+
 [Sign up][signup]{: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
@@ -36,8 +37,8 @@ Apps that support your activities
 
 
 
-[Signin]: #
-[Signup]: #
+[Signin]: #signin
+[Signup]: #signup
 [Liquid]: https://github.com/Shopify/liquid/wiki
 [Front matter]: https://jekyllrb.com/docs/front-matter/
 [Jekyll configuration]: https://jekyllrb.com/docs/configuration/
