@@ -1,26 +1,5 @@
-# just-the-docs-template
+# Docs for Aska systems
 
-This is a *bare-minimum* template to create a [Jekyll] site that:
-
-- uses the [Just the Docs] theme;
-- can be built and published on [GitHub Pages];
-- can be built and previewed locally, and published on other platforms.
-
-More specifically, the created site:
-
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem;
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages.
-
-To get started with creating a site, just click "[use this template]"!
-
-After completing the creation of your new site on GitHub, update it as needed:
-
-## Replace the content of the template pages
-
-Update the following files to your own content:
-
-- `index.md` (your new home page)
-- `README.md` (information for those who access your site repo on GitHub)
 
 ## Changing the version of the theme and/or Jekyll
 
