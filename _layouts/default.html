@@ -48,7 +48,18 @@ layout: table_wrappers
       <a href="#" id="menu-button" class="site-button">
         <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
       </a>
+
+      {% if site.lang == "ja" %}
+        {% capture link1 %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
+        <p class="mr-4"><a href="{{ link1 }}">:us:</a></p>
+        <p class="mr-4"><a href="#" >:jp:</a></p>
+      {% else %}
+        {% capture link2 %}{{ site.baseurl_root }}/ja{{ page.url }}{% endcapture %}
+        <p class="mr-4"><a href="#">:us:</a></p>
+        <p class="mr-4"><a href="{{ link2 }}" >:jp:</a></p>
+      {% endif %}
     </div>
+
     <nav aria-label="Main" id="site-nav" class="site-nav">
       {% assign pages_top_size = site.html_pages
           | where_exp:"item", "item.title != nil"

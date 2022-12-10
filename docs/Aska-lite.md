@@ -1,8 +1,12 @@
 ---
 layout: default
 title: Aska lite
-nav_order: 2
+nav_order: 3
 ---
+
+<span class="fs-5">
+[Open Aska lite](http://aska-lite.streamlit.app){: .btn .btn-primary .mr-4 .float-right}
+</span>
 
 # Aska lite
 {: .fs-9 .no_toc .text-purple-100 }
@@ -24,11 +28,7 @@ Simpler version of Aska
 
 ---
 
-## App
-
-<span class="fs-5">
-[Open Aska lite](http://aska-lite.streamlit.app){: .btn .btn-primary .mt-3 .flex-justify-end}
-</span>
+## How it works?
 
 **Restrictions**
 
@@ -48,8 +48,6 @@ Aska Lite is currently in preparation. Only limited users can access to the app.
 > Accessibility
 >
 > For limited use, anyone can access and use Aska lite without signing-in.
-
-## How it works?
 
 
 

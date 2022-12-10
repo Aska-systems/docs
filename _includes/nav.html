@@ -165,7 +165,11 @@
             <svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg>
           </a>
         {%- endif -%}
-        <a href="{{ node.url | relative_url }}" class="nav-list-link{% if page.url == node.url %} active{% endif %}">{{ node.title }}</a>
+        {% if site.lang == "ja" %}
+          <a href="/ja{{ node.url | relative_url }}" class="nav-list-link{% if page.url == node.url %} active{% endif %}">{{ node.title }}</a>
+        {% else %}
+          <a href="{{ node.url | relative_url }}" class="nav-list-link{% if page.url == node.url %} active{% endif %}">{{ node.title }}</a>
+        {% endif %}
         {%- if node.has_children -%}
           {%- assign children_list = second_level_pages
                 | where: "parent", node.title -%}
@@ -181,7 +185,11 @@
                   <svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg>
                 </a>
               {%- endif -%}
-              <a href="{{ child.url | relative_url }}" class="nav-list-link{% if page.url == child.url %} active{% endif %}">{{ child.title }}</a>
+              {% if site.lang == "ja" %}
+                <a href="/ja{{ child.url | relative_url }}" class="nav-list-link{% if page.url == child.url %} active{% endif %}">{{ child.title }}</a>
+              {% else %}
+                <a href="{{ child.url | relative_url }}" class="nav-list-link{% if page.url == child.url %} active{% endif %}">{{ child.title }}</a>
+              {% endif %}
               {%- if child.has_children -%}
                 {%- assign grand_children_list = third_level_pages
                       | where: "parent", child.title
@@ -193,7 +201,11 @@
                 {%- for grand_child in grand_children_list -%}
                   {%- unless grand_child.nav_exclude -%}
                   <li class="nav-list-item {% if page.url == grand_child.url %} active{% endif %}">
-                    <a href="{{ grand_child.url | relative_url }}" class="nav-list-link{% if page.url == grand_child.url %} active{% endif %}">{{ grand_child.title }}</a>
+                    {% if site.lang == "ja" %}
+                      <a href="/ja{{ grand_child.url | relative_url }}" class="nav-list-link{% if page.url == grand_child.url %} active{% endif %}">{{ grand_child.title }}</a>
+                    {% else %}
+                      <a href="{{ grand_child.url | relative_url }}" class="nav-list-link{% if page.url == grand_child.url %} active{% endif %}">{{ grand_child.title }}</a>
+                    {% endif %}
                   </li>
                   {%- endunless -%}
                 {%- endfor -%}
