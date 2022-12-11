@@ -35,6 +35,6 @@ languages: ["ja"]
 ## ご登録団体様
 
 <div>
-	<img src="../../assets/images/logo/Osaka_Kyoiku_Univ.svg" height="170" width="170" align="top" >
-	<img src="../../assets/images/logo/ChibaUniv_ja.svg" height="200" width="200" align="top" >
+	<img src="../../../assets/images/logo/Osaka_Kyoiku_Univ.svg" height="170" width="170" align="top" >
+	<img src="../../../assets/images/logo/ChibaUniv_ja.svg" height="200" width="200" align="top" >
 </div>
