@@ -9,7 +9,7 @@ permalink: /
 # Sign in
 {: .fs-9 }
 
-To use the apps below, please sign in via the following buttons:
+{% t index.signin %}
 
 [Sign in][signin]{: .btn .btn-blue .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [Sign up][signup]{: .btn .fs-5 .mb-4 .mb-md-0 }
@@ -23,15 +23,15 @@ To use the apps below, please sign in via the following buttons:
 
 <dl>
 <dt>Aska (v1.9)</dt>
-<dd>Opinion-sharing platform</dd>
+<dd>{% t Aska.intro %}</dd>
 <dt>Aska lite</dt>
-<dd>Simpler version of Aska</dd>
+<dd>{% t Aska-lite.intro %}</dd>
 <dt>Manuspection</dt>
-<dd>Format checker for your LaTeX research manuscript</dd>
+<dd>{% t Manuspection.intro %}</dd>
 <dt>PositiveReview</dt>
-<dd>Crowd-sourcing app for slide figures</dd>
+<dd>{% t PositiveReview.intro %}</dd>
 <dt>OMP</dt>
-<dd>Optimal visualization of matrix (table) data</dd>
+<dd>{% t OMP.intro %}</dd>
 </dl>
 
 

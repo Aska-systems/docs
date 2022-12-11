@@ -1,12 +1,23 @@
-Aska:
-  intro: Opinion-sharing platform
+index:
+  signin: To use the apps below, please sign in via the following buttons
 
-manuspection:
+Aska:
+  intro: Opinion-sharing platform (suitable for surveys with open-ended questions)
+
+Aska-lite:
+  intro: Simpler version of Aska (suitable for surveys with many choices)
+
+Manuspection:
+  intro: Format checker for your LaTeX research manuscript
   howworks1: This is an online app that checks whether your research manuscript (written in LaTeX) is in compliance with an academic journal. American & British English spellings are also detected.
   howworks2: It takes a considerable amount of time for checking the format specified by the journal guideline.
   howworks3: Let's first apply Manuspection!
   howworks4: We will add the journal formats upon request.
 
-positivereview:
+PositiveReview:
+  intro: Ordering system for figures in presentaitons/papers
   howworks1: A subscription-type app that you can quickly order schmatic figures. You can order just by describing what you want, pasting reference images from Google, or by posting your own drawings. 
   howworks2: Let's get your own figures for your presentaiton slide so that you can upload it on the web!
+
+OMP:
+  intro: Optimal visualization of matrix (table) data

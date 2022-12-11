@@ -5,7 +5,7 @@ nav_order: 2
 ---
 
 <span class="fs-5">
-[Open Aska (v1.9)](http://aska.systems){: .btn .btn-primary .mr-4 .float-right}
+[Open app](http://aska.systems){: .btn .btn-primary .mr-4 .float-right}
 </span>
 
 # Aska
@@ -18,7 +18,7 @@ stable
 {: .label .label-green }
 </div>
 
-{% t Aska.intro %}
+<strong>{% t Aska.intro %}</strong>
 
 ## Table of contents
 {: .no_toc .text-delta }

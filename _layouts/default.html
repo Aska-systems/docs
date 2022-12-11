@@ -44,19 +44,24 @@ layout: table_wrappers
 
   <div class="side-bar">
     <div class="site-header">
-      <a href="{{ '/' | relative_url }}" class="site-title lh-tight">{% include title.html %}</a>
+      {% if site.lang == "ja" %}
+        {% capture link_title_ja %}{{ site.baseurl_root }}/ja{% endcapture %}
+        <a href="{{ link_title_ja }}" class="site-title lh-tight">{% include title.html %}</a>
+      {% else %}
+        <a href="{{ '/' | relative_url }}" class="site-title lh-tight">{% include title.html %}</a>
+      {% endif %}
       <a href="#" id="menu-button" class="site-button">
         <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
       </a>
 
       {% if site.lang == "ja" %}
-        {% capture link1 %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
-        <p class="mr-4"><a href="{{ link1 }}">:us:</a></p>
+        {% capture link_en %}{{ site.baseurl_root }}{{ page.url }}{% endcapture %}
+        <p class="mr-4"><a href="{{ link_en }}">:us:</a></p>
         <p class="mr-4"><a href="#" >:jp:</a></p>
       {% else %}
-        {% capture link2 %}{{ site.baseurl_root }}/ja{{ page.url }}{% endcapture %}
+        {% capture link_ja %}{{ site.baseurl_root }}/ja{{ page.url }}{% endcapture %}
         <p class="mr-4"><a href="#">:us:</a></p>
-        <p class="mr-4"><a href="{{ link2 }}" >:jp:</a></p>
+        <p class="mr-4"><a href="{{ link_ja }}" >:jp:</a></p>
       {% endif %}
     </div>
 

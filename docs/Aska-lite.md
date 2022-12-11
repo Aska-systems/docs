@@ -5,7 +5,7 @@ nav_order: 3
 ---
 
 <span class="fs-5">
-[Open Aska lite](http://aska-lite.streamlit.app){: .btn .btn-primary .mr-4 .float-right}
+[Open app](http://aska-lite.streamlit.app){: .btn .btn-primary .mr-4 .float-right}
 </span>
 
 # Aska lite
@@ -18,7 +18,7 @@ nightly
 {: .label .label-purple }
 </div>
 
-Simpler version of Aska
+<strong>{% t Aska-lite.intro %}</strong>
 
 ## Table of contents
 {: .no_toc .text-delta }

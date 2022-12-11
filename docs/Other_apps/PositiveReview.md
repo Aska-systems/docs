@@ -5,8 +5,8 @@ parent: Other apps
 nav_order: 2
 ---
 
-<span class="fs-6">
-[Open ](http://positivereview.streamlit.app){: .btn .btn-primary .mr-4 .float-right}
+<span class="fs-5">
+[Open app](http://positivereview.streamlit.app){: .btn .btn-primary .mr-4 .float-right}
 </span>
 
 # PositiveReview
@@ -18,6 +18,7 @@ in Japanese
 Beta version
 {: .label .label-yellow }
 </div>
+<strong> {% t PositiveReview.intro %} </strong>
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -29,9 +30,9 @@ Beta version
 
 ## How it works?
 
-{% t positivereview.howworks1 %}
+{% t PositiveReview.howworks1 %}
 
-{% t positivereview.howworks2 %}
+{% t PositiveReview.howworks2 %}
 
 
 

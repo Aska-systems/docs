@@ -1,7 +1,9 @@
 ---
 layout: default
-title: Aska us!
+title: Ask us!
 nav_order: 5
+
+languages: ["ja"]
 ---
 
 # Ask us!

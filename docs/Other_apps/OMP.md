@@ -5,6 +5,10 @@ parent: Other apps
 nav_order: 3
 ---
 
+<span class="fs-5">
+[Open app](http://OMP.streamlit.app){: .btn .btn-primary .mr-4 .float-right}
+</span>
+
 # OMP (Optimal Matrix Plot)
 {: .fs-9 .no_toc .text-purple-100 }
 <div markdown="1">
@@ -15,6 +19,7 @@ nightly
 {: .label .label-purple }
 </div>
 
+<strong>{% t OMP.intro %}</strong>
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -24,17 +29,8 @@ nightly
 
 ---
 
-## App
-
-<span class="fs-5">
-[Open OMP](http://OMP.streamlit.app){: .btn .btn-primary .mt-3 .flex-justify-end}
-</span>
-
 {: .highlight }
 OMP is currently in preparation. Only limited users can access to the app.
-
-{: .important }
-> This is a temporary link for the beta-version. Direct access will be prohibited in the future. 
 
 
 ## How it works?

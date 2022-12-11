@@ -7,8 +7,8 @@ nav_order: 1
 languages: ["en","ja"]
 ---
 
-<span class="fs-6">
-[Open](http://man-spection.streamlit.app){: .btn .btn-primary .mr-4 .float-right}
+<span class="fs-5">
+[Open app](http://man-spection.streamlit.app){: .btn .btn-primary .mr-4 .float-right}
 </span>
 
 
@@ -18,6 +18,8 @@ languages: ["en","ja"]
 Beta version
 {: .label .label-yellow }
 </div>
+
+<strong>{% t Manuspection.intro %}</strong>
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -29,15 +31,15 @@ Beta version
 
 ## How it works?
 
-{% t manuspection.howworks1 %}
+{% t Manuspection.howworks1 %}
 
-{% t manuspection.howworks2 %}
+{% t Manuspection.howworks2 %}
 
-{% t manuspection.howworks3 %}
+{% t Manuspection.howworks3 %}
 
 
 {: .note }
-> {% t manuspection.howworks4 %}
+> {% t Manuspection.howworks4 %}
 
 
 ## Usage
