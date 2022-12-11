@@ -45,7 +45,7 @@ layout: table_wrappers
   <div class="side-bar">
     <div class="site-header">
       {% if site.lang == "ja" %}
-        {% capture link_title_ja %}{{ site.baseurl_root }}/ja{% endcapture %}
+        {% capture link_title_ja %}{{ site.baseurl_root }}ja{% endcapture %}
         <a href="{{ link_title_ja }}" class="site-title lh-tight">{% include title.html %}</a>
       {% else %}
         <a href="{{ '/' | relative_url }}" class="site-title lh-tight">{% include title.html %}</a>
@@ -59,7 +59,7 @@ layout: table_wrappers
         <p class="mr-4"><a href="{{ link_en }}">:us:</a></p>
         <p class="mr-4"><a href="#" >:jp:</a></p>
       {% else %}
-        {% capture link_ja %}{{ site.baseurl_root }}/ja{{ page.url }}{% endcapture %}
+        {% capture link_ja %}{{ site.baseurl_root }}ja{{ page.url }}{% endcapture %}
         <p class="mr-4"><a href="#">:us:</a></p>
         <p class="mr-4"><a href="{{ link_ja }}" >:jp:</a></p>
       {% endif %}
