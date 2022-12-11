@@ -3,9 +3,18 @@ index:
 
 Aska:
   intro: 意見共有プラットフォーム（自由記述式アンケート調査に最適）
+  howworks1: Askaは、自由記述質問に適したアンケートフレームワークです。ユーザーには自身の意見を投稿するとともに、（SNSのように）賛成する意見を選択してもらいます。これらのユーザー履歴に基づき、収集された意見たちを機械学習アルゴリズムが適切に整理して出力します。
 
 Aska-lite:
   intro: Aska簡易版（選択肢の多いアンケート調査に最適）
+  restrictions: 制限
+  restriction1: 回答者はご自身の意見を投稿することはできません（選択のみ可能）
+  restriction2: 作成されたアンケートトピックは、後で編集することは出来ません
+  advantages: 利点
+  advantage1: 使い方が簡単です！
+  advantage2: 文章の他に、Youtube動画や画像 (Dropbox Link経由)を選択肢として設置することができます
+  accessibility: アクセシビリティ
+  accessibility_text: 限定的なご利用の場合には、サインインなしでAska liteを利用することができます
 
 Manuspection:
   intro: 研究論文のフォーマットチェッカー

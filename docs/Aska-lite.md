@@ -30,24 +30,24 @@ nightly
 
 ## How it works?
 
-**Restrictions**
+**{% t Aska-lite.restrictions %}**
 
-- The respondents are not allowed to post their own opinions/responses
-- The survey topic is not editable once it is launched.
+- {% t Aska-lite.restriction1 %}
+- {% t Aska-lite.restriction2 %}
 
-**Advantages**
+**{% t Aska-lite.advantages %}**
 
-- It's simple!
-- You can add Youtube videos and images (shared via Dropbox Links) as the choices!
+- {% t Aska-lite.advantage1 %}
+- {% t Aska-lite.advantage2 %}
 
 {: .highlight }
 Aska Lite is currently in preparation. Only limited users can access to the app.
 
 
 {: .new-title }
-> Accessibility
+> {% t Aska-lite.accessibility %}
 >
-> For limited use, anyone can access and use Aska lite without signing-in.
+> {% t Aska-lite.accessibility_text %}
 
 
 

@@ -3,9 +3,18 @@ index:
 
 Aska:
   intro: Opinion-sharing platform (suitable for surveys with open-ended questions)
+  howworks1: Aska apps are survey frameworks that are suitable for open-ended questions. Users respond by posting their own opinions and selecting the opinions that they agree with (just like you often do in social network services). Machine-learning algorithms nicely categorize&align the collected opinions based on these user activities. 
 
 Aska-lite:
   intro: Simpler version of Aska (suitable for surveys with many choices)
+  restrictions: Restrictions
+  restriction1: The respondents are not allowed to post their own opinions/responses (multiple-choice only)
+  restriction2: The survey topic is not editable once it is launched
+  advantages: Advantages
+  advantage1: It's simple!
+  advantage2: You can add Youtube videos and images (shared via Dropbox Links) as well as texts for choices!
+  accessibility: Accessibility
+  accessibility_text: For limited use, anyone can access and use Aska lite without signing-in.
 
 Manuspection:
   intro: Format checker for your LaTeX research manuscript
