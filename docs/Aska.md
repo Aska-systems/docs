@@ -9,7 +9,7 @@ nav_order: 2
 </span>
 
 # Aska
-{: .fs-9 .no_toc .text-purple-100 }
+{: .fs-9 .no_toc .text-red-300 }
 <div markdown="1">
 v1.9.13
 {: .label }

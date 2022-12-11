@@ -7,7 +7,7 @@ languages: ["ja"]
 ---
 
 # Ask us!
-{: .fs-9 .no_toc .text-purple-100 }
+{: .fs-9 .no_toc .text-red-300 }
 ## Table of contents
 {: .no_toc .text-delta }
 

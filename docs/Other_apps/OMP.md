@@ -10,7 +10,7 @@ nav_order: 3
 </span>
 
 # OMP (Optimal Matrix Plot)
-{: .fs-9 .no_toc .text-purple-100 }
+{: .fs-9 .no_toc .text-red-300 }
 <div markdown="1">
 v0.1
 {: .label }
