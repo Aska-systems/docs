@@ -8,7 +8,7 @@ nav_order: 2
 # Aska
 {: .fs-9 .no_toc .text-red-300 }
 <span class="fs-5">
-[Open app](http://aska.systems){: .btn .btn-primary .mr-4 .float-right}
+[Open app](https://aska.systems){: .btn .btn-primary .mr-4 .float-right}
 </span>
 <div markdown="1">
 v1.9.13

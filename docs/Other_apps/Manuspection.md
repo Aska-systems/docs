@@ -10,7 +10,7 @@ languages: ["en","ja"]
 # Manuspection
 {: .fs-9 .no_toc .text-red-300 }
 <span class="fs-5">
-[Open app](http://man-spection.streamlit.app){: .btn .btn-primary .mr-4 .float-right}
+[Open app](https://man-spection.streamlit.app){: .btn .btn-primary .mr-4 .float-right}
 </span>
 <div markdown="1">
 Beta version

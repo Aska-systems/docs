@@ -8,7 +8,7 @@ nav_order: 3
 # OMP (Optimal Matrix Plot)
 {: .fs-9 .no_toc .text-red-300 }
 <span class="fs-5">
-[Open app](http://OMP.streamlit.app){: .btn .btn-primary .mr-4 .float-right}
+[Open app](https://OMP.streamlit.app){: .btn .btn-primary .mr-4 .float-right}
 </span>
 <div markdown="1">
 v0.1
