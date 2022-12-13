@@ -43,7 +43,10 @@ Beta version
 ## Usage
 
 
-<!-- ## Tutorial video -->
+### Tutorial video
+
+[![](https://img.youtube.com/vi/wQ_YuGL3JiU/0.jpg)](https://www.youtube.com/watch?v=wQ_YuGL3JiU)
+
 
 
 
